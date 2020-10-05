@@ -1,0 +1,42 @@
+﻿Capstone Project Proposal: Taylor Phillips
+Name of Project: “Main Stage”
+
+
+Absolute minimum features:
+-Artist is viewed as primary ‘User’
+-User Authentication - “Log in”, “Create an Account”
+-User Authorization to distinguish accounts - Can you CRUD or just View?
+-Blogging ability for Artists, or message to the fans kind of thing.
+-Potentially blogging ability for fans in a separate section - “fan experiences”
+-Upload picture
+-Nav bar -- Search bar -- remains on Each page
+-A logo
+
+
+What tools, frameworks, libraries, API’s might you need?
+-React with Firebase and Firebase Auth.
+-Firebase to store users, pictures, profile pages, music mp3’s
+-I’ll use figma for my diagramming
+-More than likely will use bootstrap for styling and organization
+
+
+If I finish the MVP with time to spare I’d like to work on these things:
+-Message Board (with upvote and downvote capability)
+-Cloud Storage
+-Upload/Store Audio Clip
+-Upload Video Clip
+-Live Audio Stream
+-Live Video Stream
+-Fan Donation to Artist
+-Artist ability to direct donation towards foundation or charity
+
+
+Other things to know:
+        -The concept was that artists would have direct control over the content that they share with the public, or with their authenticated fans.  The artist could have some content available for free, like pictures, blogs, audio or video clips… and then would also have events or other content that they feel should require some sort of minimum donation or compensation.  The donation from fans can be directed by the artist to a charity -- the decision would be shared with the fan.  I’m excited to work with something music related and I’m curious about the stretch goals I have down.
+
+
+I hope this formatting is ok,
+Thank you for all the advice!  
+
+
+Taylor Phillips

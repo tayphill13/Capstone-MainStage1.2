@@ -1,0 +1,1 @@
+![main-stage diagram](MainStageDiagram.png "Main Stage Outline")
