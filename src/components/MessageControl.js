@@ -124,8 +124,8 @@ class MessageControl extends React.Component {
           <MessageDetail
             message={this.state.selectedMessage}
             onClickingDelete={this.handleDeletingMessage}
-            onClickingUpdate={this.handleEditClick}/>
-            // onNewResponseCreation={this.handleAddingNewMessageToList}
+            onClickingUpdate={this.handleEditClick}
+            onNewResponseCreation={this.handleAddingNewMessageToList}/>
         );
         buttonText = 'Return to Message List';
       } else if (this.props.formVisibleOnPage) {
