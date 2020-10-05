@@ -29,7 +29,6 @@ class MessageControl extends React.Component {
   componentWillUnmount() {
     clearInterval(this.waitTimeUpdateTimer);
   }
-
   updateMessageElapsedWaitTime = () => {
     const { dispatch } = this.props;
   };
