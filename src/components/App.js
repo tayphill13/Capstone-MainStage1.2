@@ -14,7 +14,7 @@ function App() {
         <Route path='/signin'>
         <Signin />
         </Route>
-        <Route>
+        <Route path='/'>
           <MessageControl />
         </Route>
       </Switch>
