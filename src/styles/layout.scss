@@ -1,0 +1,32 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: lime;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background-image: url("https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-1.2.1&w=1000&q=80");
+  background-size: cover;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { @include border-radius(10px); }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}

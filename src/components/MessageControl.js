@@ -1,5 +1,5 @@
 import React from 'react';
-import AddMessageForm from "./NewMessageForm";
+import NewMessageForm from "./NewMessageForm";
 import MessageList from "./MessageList";
 import MessageDetail from "./MessageDetail";
 import UpdateMessage from "./UpdateMessage";
@@ -19,20 +19,6 @@ class MessageControl extends React.Component {
       // responseComplete: false,
     };
   }
-
-  componentDidMount() {
-    this.waitTimeUpdateTimer = setInterval(
-      () => this.updateMessageElapsedWaitTime(),
-      6000
-    )
-  }
-  componentWillUnmount() {
-    clearInterval(this.waitTimeUpdateTimer);
-  }
-  updateMessageElapsedWaitTime = () => {
-    const { dispatch } = this.props;
-  };
-
   handleClick = () => {
     if (this.state.selectedMessage != null) {
       this.setState({
@@ -51,13 +37,6 @@ class MessageControl extends React.Component {
     const action = a.toggleForm();
     dispatch(action);
   };
-
-  // handleAddingNewResponseToList = () => {
-  //   this.setState({
-  //     selectedSurvey: null,
-  //     responseComplete: true
-  //   })
-  // };
 
   handleViewMessageDetails = (id) => {
     this.props.firestore
@@ -130,7 +109,7 @@ class MessageControl extends React.Component {
         buttonText = 'Return to Message List';
       } else if (this.props.formVisibleOnPage) {
         currentlyVisibleState = (
-          <AddMessageForm
+          <NewMessageForm
             onNewMessageCreation={this.handleAddingNewMessageToList}
           />
         );

@@ -1,0 +1,30 @@
+.header {
+  padding: 1rem 0 3rem;
+}
+
+.banner  {
+  color: rgb(0, 255, 0);
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.navBar {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.navItem {
+  color: rgb(255, 255, 255);
+  font-size: .9rem;
+  margin-right: 1.3rem;
+  text-decoration: none;
+}
+
+.navItem:hover {
+  color: rgba(245, 245, 245, 0.815);
+}
+
+.currentNavItem {
+  color: rgb(0, 255, 0);
+}

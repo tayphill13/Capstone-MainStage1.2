@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Message from './message';
+import Message from './Message';
 import { useFirestoreConnect, isLoaded } from "react-redux-firebase";
 import { useSelector } from 'react-redux';
 
