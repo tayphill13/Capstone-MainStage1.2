@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import headerStyles from './Header.module.scss';
 import styled from 'styled-components';
+import '../styles/index.scss';
 
 const MainStageHeader = styled.h1`
   font-size: 60px;
@@ -15,7 +16,7 @@ function Header() {
       <MainStageHeader className={headerStyles.header}>
         Main Stage
       </MainStageHeader>
-      <div className={headerStyles.navBar}>
+      <nav className={headerStyles.navBar}>
       <ul>
         <li className={headerStyles.navItem}>
           <Link to="/">Home</Link>
@@ -36,7 +37,7 @@ function Header() {
           <Link to="/contact">ContactMe</Link>
         </li>
       </ul>
-      </div>
+      </nav>
     </React.Fragment>
   );
 }

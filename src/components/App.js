@@ -5,8 +5,8 @@ import MessageControl from './MessageControl';
 import About from './About';
 import Signin from './Signin';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-// import '../styles/layout.scss';
-import'../styles/index.scss';
+import '../styles/layout.scss';
+// import '../styles/index.scss';
 
 function App() {
   return (
