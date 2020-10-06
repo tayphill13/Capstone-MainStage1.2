@@ -9,5 +9,6 @@
 11:45am - Peers checking in
 12:00 lunch -- Styles are distorting the nav bar, so look into that after lunch and then begin to develop the other pages
 
+1:00pm - Continuing with coding, looking to get navbar back in place and have routing to multiple pages
 
 
