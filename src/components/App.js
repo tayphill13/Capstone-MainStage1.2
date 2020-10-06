@@ -13,10 +13,10 @@ function App() {
       <Header />
       <Switch>
         <Route path='/signin'>
-        <Signin />
+          <Signin />
         </Route>
         <Route path='/'>
-          <MessageControl/>
+          <MessageControl />
         </Route>
       </Switch>
       <Footer />

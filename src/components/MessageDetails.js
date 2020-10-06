@@ -10,8 +10,6 @@ function MessageDetails(props) {
   function addMessageToFirestore(event) {
     event.preventDefault();
 
-    props.onNewResponseCreation();
-
     return firestore.collection('messages').add({
       what: event.target.what.value,
       when: event.target.when.value,
@@ -37,12 +35,12 @@ function MessageDetails(props) {
         <label>
           {message.where}
           <input name='where'>
-          </input >
+          </input>
         </label>
         <br />
         <button type='submit'>Submit Message!</button>
-      </form >
-    </React.Fragment >
+      </form>
+    </React.Fragment>
   );
 }
 

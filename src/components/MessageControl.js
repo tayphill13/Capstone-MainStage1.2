@@ -1,9 +1,9 @@
 import React from 'react';
 import NewMessageForm from "./NewMessageForm";
+import About from './About'
 import MessageList from "./MessageList";
 import MessageDetails from "./MessageDetails";
 import UpdateMessage from "./UpdateMessage";
-// import MessageComplete from './MessageComplete'
 import { connect } from 'react-redux';
 import * as a from "./../actions";
 import { withFirestore, isLoaded } from "react-redux-firebase";
@@ -13,10 +13,10 @@ class MessageControl extends React.Component {
 
   constructor(props) {
     super(props);
+    console.log(props);
     this.state = {
       selectedMessage: null,
       editing: false,
-      // responseComplete: false,
     };
   }
   handleClick = () => {
@@ -30,13 +30,15 @@ class MessageControl extends React.Component {
       const action = a.toggleForm();
       dispatch(action);
     }
-  };
+  }
 
-  handleAddingNewMessageToList = () => {
+  handleAddingNewMessageToList = (newMessage) => {
     const { dispatch } = this.props;
-    const action = a.toggleForm();
+    const action = a.addMessage(newMessage);
     dispatch(action);
-  };
+    const action2 = a.toggleForm();
+    dispatch(action2);
+  }
 
   handleViewMessageDetails = (id) => {
     this.props.firestore
@@ -59,10 +61,13 @@ class MessageControl extends React.Component {
     this.setState({ editing: true });
   };
 
-  handleEditingMessageInList = () => {
+  handleEditingMessageInList = (messageToEdit) => {
+    const { dispatch } = this.props;
+    const action = a.addTicket(messageToEdit);
+    dispatch(action);
     this.setState({
       editing: false,
-      selectedMessage: null,
+      selectedMessage: null
     });
   };
 
@@ -103,14 +108,19 @@ class MessageControl extends React.Component {
           <MessageDetails
             message={this.state.selectedMessage}
             onClickingDelete={this.handleDeletingMessage}
-            onClickingUpdate={this.handleEditClick}
-            onNewResponseCreation={this.handleAddingNewMessageToList}/>
+            onClickingEdit={this.handleEditClick}/>
         );
         buttonText = 'Return to Message List';
       } else if (this.props.formVisibleOnPage) {
         currentlyVisibleState = (
           <NewMessageForm
             onNewMessageCreation={this.handleAddingNewMessageToList}/>
+        );
+        buttonText = "Return to Message List";
+      } else if (this.props.formVisibleOnPage) {
+        currentlyVisibleState = (
+          <About
+            onNewMessageCreation={this.handleAddingNewMessageToList} />
         );
         buttonText = "Return to Message List";
       } else {
