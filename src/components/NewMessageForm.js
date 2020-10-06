@@ -10,7 +10,7 @@ function NewMessageForm(props) {
   function addMessageToFirestore(event) {
     event.preventDefault();
 
-    props.onNewSurveyCreation();
+    props.onNewMessageCreation();
 
     return firestore.collection("messages").add({
       name: event.target.name.value,

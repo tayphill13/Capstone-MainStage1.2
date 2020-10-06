@@ -1,7 +1,7 @@
 import React from 'react';
 import NewMessageForm from "./NewMessageForm";
 import MessageList from "./MessageList";
-import MessageDetail from "./MessageDetail";
+import MessageDetails from "./MessageDetails";
 import UpdateMessage from "./UpdateMessage";
 // import MessageComplete from './MessageComplete'
 import { connect } from 'react-redux';
@@ -77,14 +77,14 @@ class MessageControl extends React.Component {
     if(!isLoaded(auth)) {
       return (
         <React.Fragment>
-          <h1>Pretend there's loading music...</h1>
+          <h1>Pretend there's 'loading' music...</h1>
         </React.Fragment>
       );
     }
     if (isLoaded(auth) && auth.currentUser == null) {
       return (
         <React.Fragment>
-          <h1>You must be signed in to access the features on this site!</h1>
+          <h1>You must be signed in!</h1>
         </React.Fragment>
       );
     }
@@ -100,7 +100,7 @@ class MessageControl extends React.Component {
         buttonText = "Return to Message List";
       } else if (this.state.selectedMessage != null) {
         currentlyVisibleState = (
-          <MessageDetail
+          <MessageDetails
             message={this.state.selectedMessage}
             onClickingDelete={this.handleDeletingMessage}
             onClickingUpdate={this.handleEditClick}
@@ -110,13 +110,13 @@ class MessageControl extends React.Component {
       } else if (this.props.formVisibleOnPage) {
         currentlyVisibleState = (
           <NewMessageForm
-            onNewMessageCreation={this.handleAddingNewMessageToList}
-          />
+            onNewMessageCreation={this.handleAddingNewMessageToList}/>
         );
         buttonText = "Return to Message List";
       } else {
         currentlyVisibleState = (
-          <MessageList onMessageSelection={this.handleViewMessageDetails} />
+          <MessageList
+            onMessageSelection={this.handleViewMessageDetails}/>
         );
         buttonText = "Add Message";
       }

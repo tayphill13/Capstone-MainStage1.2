@@ -6,6 +6,7 @@
   display: flex;
   list-style-type: none;
   margin: 0;
+  text-align: center;
 }
 
 .navItem {
@@ -17,6 +18,7 @@
 
 .navItem:hover {
   color: rgba(245, 245, 245, 0.815);
+  outline-color: whitesmoke;
 }
 
 .currentNavItem {

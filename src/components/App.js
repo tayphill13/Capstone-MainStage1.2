@@ -2,11 +2,10 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import MessageControl from './MessageControl';
-import About from './About';
 import Signin from './Signin';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import '../styles/layout.scss';
-// import '../styles/index.scss';
+import '../styles/index.scss';
 
 function App() {
   return (
@@ -18,9 +17,6 @@ function App() {
         </Route>
         <Route path='/'>
           <MessageControl/>
-        </Route>
-        <Route path='/about'>
-          <About />
         </Route>
       </Switch>
       <Footer />
