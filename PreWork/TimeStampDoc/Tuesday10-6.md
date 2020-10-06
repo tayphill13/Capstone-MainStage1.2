@@ -19,5 +19,6 @@
 3:15pm - Developing a footer with links, and email box.
 4:00pm - I really want to get my footer done by 5pm, so I'm pouring work into getting it looking a bit better.  Ideally I'd like some links to external webpages like my github or linkedIn.
 
-4:30pm - 
+4:30pm - showed off what I have to my wife and she approves, so I've got that goin for me.  It's functioning well, without much meat to it. Tomorrow I need to focus on implementing firebase with auth and how to upload pictures or music
+--Also need to implement a message board
 
