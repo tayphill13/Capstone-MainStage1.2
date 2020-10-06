@@ -5,6 +5,11 @@ export const deleteMessage = (id) => ({
   id,
 });
 
+export const addMessage = (id) => ({
+  type: c.ADD_MESSAGE,
+  id,
+});
+
 export const toggleForm = () => ({
   type: c.TOGGLE_FORM,
 });
@@ -13,4 +18,4 @@ export const updateTime = (id, formattedWaitTime) => ({
   type: c.UPDATE_TIME,
   id: id,
   formattedWaitTime: formattedWaitTime,
-})
+});

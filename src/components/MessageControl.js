@@ -19,6 +19,16 @@ class MessageControl extends React.Component {
       editing: false,
     };
   }
+
+  componentDidMount() {
+    const auth = this.props.firebase.auth();
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        this.setState({ user });
+      }
+    });
+  }
+
   handleClick = () => {
     if (this.state.selectedMessage != null) {
       this.setState({
@@ -63,7 +73,7 @@ class MessageControl extends React.Component {
 
   handleEditingMessageInList = (messageToEdit) => {
     const { dispatch } = this.props;
-    const action = a.addTicket(messageToEdit);
+    const action = a.addMessage(messageToEdit);
     dispatch(action);
     this.setState({
       editing: false,
@@ -119,8 +129,7 @@ class MessageControl extends React.Component {
         buttonText = "Return to Message List";
       } else if (this.props.formVisibleOnPage) {
         currentlyVisibleState = (
-          <About
-            onNewMessageCreation={this.handleAddingNewMessageToList} />
+          <About />
         );
         buttonText = "Return to Message List";
       } else {
