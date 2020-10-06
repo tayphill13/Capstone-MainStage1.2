@@ -14,5 +14,7 @@
 1:45pm - Spent 15 minutes helping a peer comb for a bug-- fixed it!
 
 2:00pm - small break, then back to work -- need nav bar to be visible\
+2:45pm - I've got the routing to each page through my navbar working.  I need to set up my contact page and add custom photos
 
+3:15pm - 
 
