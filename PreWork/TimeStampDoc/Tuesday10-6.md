@@ -7,5 +7,7 @@
 11:30am - continuing to code, all the heavy lifting today
 .
 11:45am - Peers checking in
-12:00 lunch
+12:00 lunch -- Styles are distorting the nav bar, so look into that after lunch and then begin to develop the other pages
+
+
 
