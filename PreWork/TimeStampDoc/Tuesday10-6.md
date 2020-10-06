@@ -16,5 +16,8 @@
 2:00pm - small break, then back to work -- need nav bar to be visible\
 2:45pm - I've got the routing to each page through my navbar working.  I need to set up my contact page and add custom photos
 
-3:15pm - 
+3:15pm - Developing a footer with links, and email box.
+4:00pm - I really want to get my footer done by 5pm, so I'm pouring work into getting it looking a bit better.  Ideally I'd like some links to external webpages like my github or linkedIn.
+
+4:30pm - 
 
