@@ -21,4 +21,5 @@
 
 4:30pm - showed off what I have to my wife and she approves, so I've got that goin for me.  It's functioning well, without much meat to it. Tomorrow I need to focus on implementing firebase with auth and how to upload pictures or music
 --Also need to implement a message board
+5:15pm - Signing off for dinner
 
