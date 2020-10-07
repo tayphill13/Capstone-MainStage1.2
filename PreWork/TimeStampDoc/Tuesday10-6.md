@@ -25,3 +25,4 @@
 
 
 9:30pm - Determined to finish this youtube video that is giving me some styling tips for a footer design
+10:00pm - Finished adding a sign in page and still working on adding the firebase auth, firebase is setup and ready
