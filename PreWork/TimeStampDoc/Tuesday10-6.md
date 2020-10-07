@@ -23,3 +23,5 @@
 --Also need to implement a message board
 5:15pm - Signing off for dinner
 
+
+9:30pm - Determined to finish this youtube video that is giving me some styling tips for a footer design
